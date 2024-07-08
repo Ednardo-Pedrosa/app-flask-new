@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+<h2 class="mt-4">Resultados dos Comandos:</h2>
+{% for title, result in results.items() %}
+    <h3>{{ title }}</h3>
+    <pre>{{ result }}</pre>
+{% endfor %}
+<a href="/" class="btn btn-primary mt-3">Voltar</a>
+{% endblock %}

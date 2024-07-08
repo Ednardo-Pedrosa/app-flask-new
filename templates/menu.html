@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+<h2 class="mt-4">Selecione uma operação:</h2>
+<ul>
+    <li><a href="{{ url_for('result', command='storage', server_ip=server_ip, port=port, username=username, password=password) }}">Ver Armazenamento</a></li>
+    <li><a href="{{ url_for('result', command='memory', server_ip=server_ip, port=port, username=username, password=password) }}">Ver Memória</a></li>
+    <li><a href="{{ url_for('result', command='cpu', server_ip=server_ip, port=port, username=username, password=password) }}">Ver Quantidade de CPU</a></li>
+    <li><a href="{{ url_for('result', command='disk_io', server_ip=server_ip, port=port, username=username, password=password) }}">Ver Taxa de Escrita e Leitura do Disco</a></li>
+    <li><a href="{{ url_for('result', command='os_distribution', server_ip=server_ip, port=port, username=username, password=password) }}">Ver Distribuição do Sistema Operacional</a></li>
+</ul>
+<a href="/" class="btn btn-secondary mt-3">Voltar</a>
+{% endblock %}
