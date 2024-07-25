@@ -18,6 +18,22 @@
         <label for="password">Senha:</label>
         <input type="password" class="form-control" id="password" name="password" required>
     </div>
+    <div class="form-group">
+        <label for="root_username">Usuário Root:</label>
+        <input type="text" class="form-control" id="root_username" name="root_username" required>
+    </div>
+    <div class="form-group">
+        <label for="root_password">Senha Root:</label>
+        <input type="password" class="form-control" id="root_password" name="root_password" required>
+    </div>
+    <div class="form-group">
+        <label for="plan">Plano:</label>
+        <select class="form-control" id="plan" name="plan" required>
+            <option value="plan1">Plano 0 a 1 Mil Clientes (Armazenamento: 100G, Memória: 3G)</option>
+            <option value="plan2">Plano 1001 a 3 Mil Clientes (Armazenamento: 200G, Memória: 5G)</option>
+            <option value="plan2">Plano 3001 a 4 Mil Clientes (Armazenamento: 300G, Memória: 8G)</option>
+        </select>
+    </div>
     <button type="submit" class="btn btn-primary">Enviar</button>
 </form>
 {% endblock %}
